@@ -1,0 +1,16 @@
+.conteneur_menu_fleche_et_logo{
+  display : flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+#logo_Ohmyfood{
+  width : 40%;
+}
+
+i[class="fa-solid fa-arrow-left"]{
+  margin-left:8%;
+  margin-right: 21%;
+  visibility: hidden;
+  padding-top: 2%;
+}

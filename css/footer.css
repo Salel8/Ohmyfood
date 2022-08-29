@@ -1,0 +1,28 @@
+footer{
+  background-color: black;
+  color : white;
+  display : flex;
+  flex-direction : row;
+  flex-wrap : wrap;
+  justify-content: flex-start;
+}
+
+footer div{
+  padding-left : 5%;
+  padding-right : 5%;
+  width: 100%;
+}
+
+footer ul{
+  list-style : none;
+  padding-left: 0%;
+}
+
+i[class="fa-solid fa-utensils"]{
+  margin-right : 4%;
+  font-size : 80%;
+}
+i[class="fa-solid fa-handshake-angle"]{
+  margin-right : 2%;
+  font-size : 80%;
+}
