@@ -1,0 +1,273 @@
+@charset "UTF-8";
+a i[class="fa-solid fa-arrow-left"] {
+  visibility: visible;
+}
+
+aside img {
+  object-fit: cover;
+  width: 100%;
+}
+
+section {
+  background-color: #f6f6f6;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: relative;
+  top: -40px;
+  margin-bottom: -10%;
+}
+
+.fa-circle-check:before {
+  font-size: 150%;
+}
+
+.padding-right:hover {
+  padding-right: 8%;
+}
+
+.conteneur_ligne {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.conteneur_ligne:hover {
+  /*padding-right: 0%;*/
+}
+.conteneur_ligne:hover .conteneur_animation {
+  display: inherit;
+  width: 20%;
+  border-radius: 0px 15px 15px 0px;
+  /*transform: scale(100%);*/
+  animation: ajouter_plat 2000ms;
+  animation-fill-mode: forwards;
+}
+.conteneur_ligne:hover .conteneur_animation i[class="fa-solid fa-circle-check"] {
+  color: white;
+  animation: ajouter_plat_rotation 2000ms;
+}
+.conteneur_ligne:hover .conteneur_prix {
+  margin-left: 20%;
+  animation: deplacement_conteneur_prix 2000ms;
+  animation-fill-mode: forwards;
+}
+
+.conteneur_colonne {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centrer_element {
+  justify-content: center;
+  align-items: center;
+}
+
+.bordure_conteneur {
+  width: 96%;
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 4%;
+  /*padding-right: 4%;*/
+  position: relative;
+}
+
+article h4 {
+  align-self: flex-start;
+  margin-top: 8%;
+  margin-bottom: 2%;
+}
+article p {
+  margin-top: 2%;
+}
+
+.weight_title {
+  font-weight: normal;
+}
+
+.padding_right {
+  padding-right: 8%;
+}
+
+.conteneur_prix {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  right: 8%;
+  bottom: 0%;
+}
+
+/*$clr-btn: linear-gradient(170deg, #FF79DA, #9356DC);*/
+#boutton {
+  margin-top: 8%;
+  margin-bottom: 15%;
+  border-radius: 25px;
+  padding: 3%;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: white;
+  border: none;
+  box-shadow: 0px 5px 10px 5px rgb(242, 242, 242);
+}
+#boutton:hover {
+  background: linear-gradient(170deg, #ff93e1, #a16be0);
+  box-shadow: 0px 5px 10px 5px white;
+}
+
+.fa-heart:before {
+  font-size: 150%;
+}
+
+/*.fa-heart{
+  &:hover{
+    background-color:red;
+  }
+}*/
+/*i[class="fa-regular fa-heart"]*/
+.coeur-vide {
+  position: relative;
+  visibility: visible;
+  z-index: 0;
+  /*&:hover{
+    visibility: hidden;
+  }*/
+}
+.coeur-vide:hover .coeur-rempli {
+  visibility: visible;
+  z-index: 1;
+  /*opacity: 1;
+  transition: opacity 3s;*/
+  animation: coeur_remplit 2000ms;
+  animation-fill-mode: forwards;
+}
+
+.coeur-rempli {
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  /*color: linear-gradient(180deg, #FF79DA, #9356DC);*/
+  z-index: -1;
+  opacity: 0;
+}
+
+i[class="fa-solid fa-heart"] {
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
+  /*color: #9356DC;*/
+}
+
+hr {
+  background-color: #99e2d0;
+  width: 12%;
+  height: 1px;
+  padding: 0px;
+  margin: 0px;
+  /*margin-top: -5%;*/
+  margin-bottom: 5%;
+  align-self: flex-start;
+}
+
+.conteneur_animation {
+  /*display: none;*/
+  width: 1%;
+  opacity: 0;
+  background-color: #99e2d0;
+  /*transform: scale(0.1);
+  transition: transform 2s ease-out 3s;*/
+}
+
+/*menu qui apparaît un par un*/
+.apparition_entrées {
+  animation: apparition_entrées 1000ms 2000ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes apparition_entrées {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.apparition_plats {
+  animation: apparition_plats 1000ms 4000ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes apparition_plats {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.apparition_desserts {
+  animation: apparition_desserts 1000ms 6000ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes apparition_desserts {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* coeur qui se remplit*/
+@keyframes coeur_remplit {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* ajouter le plat à sa commande*/
+@keyframes ajouter_plat {
+  0% {
+    transform-origin: right;
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  50% {
+    transform-origin: right;
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform-origin: right;
+    transform: scaleX(0);
+    opacity: 0;
+  }
+}
+@keyframes ajouter_plat_rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes deplacement_conteneur_prix {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*# sourceMappingURL=menus_section.css.map */

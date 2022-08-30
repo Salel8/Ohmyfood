@@ -1,0 +1,37 @@
+@media all and (min-width: 992px) {
+  .fa-arrow-left:before {
+    font-size: 200%;
+  }
+  @keyframes deplacement_conteneur_prix {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-150px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .padding_right:hover {
+    padding-right: 8%;
+  }
+  #boutton {
+    font-size: 180%;
+  }
+  hr {
+    width: 4%;
+  }
+  .bordure_conteneur {
+    width: 60%;
+  }
+  footer div {
+    padding-top: 5%;
+  }
+  footer ul li {
+    padding-bottom: 0%;
+    padding-top: 1%;
+  }
+}
+
+/*# sourceMappingURL=menus_section_desktop.css.map */

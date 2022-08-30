@@ -6,11 +6,18 @@
 
 #logo_Ohmyfood{
   width : 40%;
+  position: relative;
+  left: 27%;
 }
 
 i[class="fa-solid fa-arrow-left"]{
-  margin-left:8%;
-  margin-right: 21%;
   visibility: hidden;
-  padding-top: 2%;
+  font-size: 130%;
+  position: relative;
+  top: 30%;
+  left: 200%;
+  color: black;
+  /*margin-left:8%;
+  margin-right: 21%;
+  padding-top: 2%;*/
 }

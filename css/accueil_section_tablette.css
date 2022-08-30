@@ -1,0 +1,76 @@
+@media all and (max-width: 991px) and (min-width: 767px) {
+  p {
+    font-size: 150%;
+  }
+  .section1 article h3 {
+    font-size: 150%;
+  }
+  #boutton {
+    font-size: 150%;
+  }
+  i[class="fa-solid fa-1"] {
+    margin-left: -2%;
+    margin-right: 15%;
+    font-size: 150%;
+  }
+  i[class="fa-solid fa-2"] {
+    margin-left: -2%;
+    margin-right: 15%;
+    font-size: 150%;
+  }
+  i[class="fa-solid fa-3"] {
+    margin-left: -2%;
+    margin-right: 15%;
+    font-size: 150%;
+  }
+  .fa-mobile-screen-button:before {
+    font-size: 150%;
+  }
+  .fa-list:before {
+    font-size: 150%;
+  }
+  .fa-store:before {
+    font-size: 150%;
+  }
+  .conteneur_colonne {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .section2 article a {
+    width: 45%;
+  }
+  .section2 aside p {
+    margin-left: 15%;
+    font-size: 150%;
+  }
+  .section2 h3 {
+    font-size: 150%;
+  }
+  .fond_blanc {
+    width: 100%;
+  }
+  .fond_blanc h4 {
+    font-size: 150%;
+  }
+  .bloc_nouveau {
+    width: 30%;
+  }
+  .coeur-rempli {
+    top: 39%;
+  }
+  footer h3 {
+    font-size: 150%;
+  }
+  footer ul li {
+    font-size: 150%;
+  }
+  .fa-utensils:before {
+    font-size: 150%;
+  }
+  .fa-handshake-angle:before {
+    font-size: 150%;
+  }
+}
+
+/*# sourceMappingURL=accueil_section_tablette.css.map */

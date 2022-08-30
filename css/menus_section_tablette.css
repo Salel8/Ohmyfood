@@ -1,0 +1,49 @@
+@media all and (max-width: 991px) and (min-width: 767px) {
+  .fa-arrow-left:before {
+    font-size: 150%;
+  }
+  .fa-heart {
+    font-size: 150%;
+  }
+  h2 {
+    font-size: 200%;
+  }
+  article p {
+    font-size: 150%;
+  }
+  article h4 {
+    font-size: 150%;
+  }
+  /*.conteneur_ligne:hover .conteneur_prix {
+    margin-left: 40%;
+  }*/
+  @keyframes deplacement_conteneur_prix {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-150px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .padding_right:hover {
+    padding-right: 8%;
+  }
+  footer h3 {
+    font-size: 150%;
+    padding-top: 10%;
+  }
+  footer ul li {
+    font-size: 150%;
+  }
+  .fa-utensils:before {
+    font-size: 150%;
+  }
+  .fa-handshake-angle:before {
+    font-size: 150%;
+  }
+}
+
+/*# sourceMappingURL=menus_section_tablette.css.map */
