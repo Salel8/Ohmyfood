@@ -38,6 +38,9 @@
     justify-content: space-around;
   }
   .section2 article a {
+    width: 100%;
+  }
+  .section2 article .conteneur_restaurant {
     width: 45%;
   }
   .section2 aside p {
@@ -54,7 +57,7 @@
     font-size: 150%;
   }
   .bloc_nouveau {
-    width: 30%;
+    width: 33%;
   }
   .coeur-rempli {
     top: 39%;
@@ -70,6 +73,9 @@
   }
   .fa-handshake-angle:before {
     font-size: 150%;
+  }
+  .redimensionner_image {
+    height: 28vmax;
   }
 }
 

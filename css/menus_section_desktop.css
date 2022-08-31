@@ -7,7 +7,7 @@
       transform: translateX(0);
     }
     50% {
-      transform: translateX(-150px);
+      transform: translateX(-120px);
     }
     100% {
       transform: translateX(0);
@@ -24,6 +24,9 @@
   }
   .bordure_conteneur {
     width: 60%;
+  }
+  .bloc_nouveau {
+    width: 32%;
   }
   footer div {
     padding-top: 5%;

@@ -1,6 +1,6 @@
 @media all and (max-width: 991px) and (min-width: 767px) {
   .fa-arrow-left:before {
-    font-size: 150%;
+    font-size: 200%;
   }
   .fa-heart {
     font-size: 150%;
@@ -13,6 +13,9 @@
   }
   article h4 {
     font-size: 150%;
+  }
+  .bloc_nouveau {
+    width: 34%;
   }
   /*.conteneur_ligne:hover .conteneur_prix {
     margin-left: 40%;
@@ -30,6 +33,9 @@
   }
   .padding_right:hover {
     padding-right: 8%;
+  }
+  #boutton {
+    font-size: 200%;
   }
   footer h3 {
     font-size: 150%;
