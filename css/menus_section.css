@@ -33,6 +33,10 @@ section {
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
+  /*&:hover .deplacement_conteneur_ecriture_rogner{
+    animation: deplacement_conteneur_ecriture_rogner 2000ms;
+    animation-fill-mode: forwards;
+  }*/
 }
 .conteneur_ligne:hover {
   /*padding-right: 0%;*/
@@ -52,6 +56,10 @@ section {
 .conteneur_ligne:hover .conteneur_prix {
   margin-left: 20%;
   animation: deplacement_conteneur_prix 2000ms;
+  animation-fill-mode: forwards;
+}
+.conteneur_ligne:hover .conteneur_rogner {
+  animation: deplacement_conteneur_rogner 2000ms;
   animation-fill-mode: forwards;
 }
 
@@ -74,6 +82,18 @@ section {
   padding-left: 4%;
   /*padding-right: 4%;*/
   position: relative;
+}
+
+.conteneur_rogner {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ecriture_rogner {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 article h4 {
@@ -258,6 +278,7 @@ hr {
     transform: rotate(360deg);
   }
 }
+/*coche qui apparaît*/
 @keyframes deplacement_conteneur_prix {
   0% {
     transform: translateX(0);
@@ -267,6 +288,33 @@ hr {
   }
   100% {
     transform: translateX(0);
+  }
+}
+@keyframes deplacement_conteneur_rogner {
+  0% {
+    transform-origin: left;
+    /*transform: scaleX(1);*/
+  }
+  50% {
+    transform-origin: left;
+    /*transform: scaleX(0.7);*/
+    width: 50%;
+  }
+  100% {
+    transform-origin: left;
+    /*transform: scaleX(1);*/
+  }
+}
+@keyframes deplacement_conteneur_ecriture_rogner {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.4);
+    /*transform: translateX(5%);*/
+  }
+  100% {
+    transform: scaleX(1);
   }
 }
 
