@@ -8,14 +8,15 @@
   width : 40%;
   position: relative;
   left: 27%;
+  top: -30%;
 }
 
 i[class="fa-solid fa-arrow-left"]{
   visibility: hidden;
   font-size: 130%;
-  position: relative;
-  top: 30%;
-  left: 200%;
+  position: absolute;
+  /*top: -30%;*/
+  left: 8%;
   color: black;
   /*margin-left:8%;
   margin-right: 21%;

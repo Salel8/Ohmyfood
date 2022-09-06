@@ -1,6 +1,12 @@
 @charset "UTF-8";
+a[href="accueil.html"] {
+  position: relative;
+  left: 8%;
+}
+
 a i[class="fa-solid fa-arrow-left"] {
   visibility: visible;
+  font-size: 150%;
 }
 
 aside img {
@@ -60,7 +66,7 @@ section {
 }
 .conteneur_ligne:hover .conteneur_rogner {
   animation: deplacement_conteneur_rogner 2000ms;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .conteneur_colonne {
@@ -96,13 +102,18 @@ section {
   text-overflow: ellipsis;
 }
 
-article h4 {
+article h3 {
   align-self: flex-start;
   margin-top: 8%;
   margin-bottom: 2%;
 }
 article p {
   margin-top: 2%;
+  /*color: #bfbfbf;*/
+}
+
+.margin-top-nul {
+  margin-top: 0%;
 }
 
 .weight_title {
@@ -150,6 +161,7 @@ article p {
 /*i[class="fa-regular fa-heart"]*/
 .coeur-vide {
   position: relative;
+  top: 20%;
   visibility: visible;
   z-index: 0;
   /*&:hover{
@@ -166,12 +178,12 @@ article p {
 }
 
 .coeur-rempli {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -47%;
   right: 0;
-  visibility: hidden;
+  /*visibility: hidden;*/
   /*color: linear-gradient(180deg, #FF79DA, #9356DC);*/
-  z-index: -1;
+  /*z-index: 3;*/
   opacity: 0;
 }
 

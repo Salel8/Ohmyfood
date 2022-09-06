@@ -19,7 +19,7 @@
     justify-content: space-around;
   }
   .section2 article a {
-    width: 23%;
+    width: 100%;
   }
   .section2 article h3 {
     padding-top: 7%;
@@ -36,12 +36,13 @@
   }
   .bloc_nouveau {
     width: 33%;
+    padding-right: 2%;
   }
   .conteneur_fonctionnement {
     width: 30%;
   }
   .coeur-rempli {
-    top: 33%;
+    top: 35%;
   }
   .load {
     top: 40%;

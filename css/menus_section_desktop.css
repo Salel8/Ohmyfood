@@ -35,6 +35,9 @@
     padding-bottom: 0%;
     padding-top: 1%;
   }
+  i[class="fa-solid fa-utensils"] {
+    margin-right: 2.5%;
+  }
 }
 
 /*# sourceMappingURL=menus_section_desktop.css.map */
