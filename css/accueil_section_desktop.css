@@ -20,6 +20,7 @@
   }
   .section2 article a {
     width: 100%;
+    height: 200px;
   }
   .section2 article h3 {
     padding-top: 7%;
@@ -31,9 +32,9 @@
   .fond_blanc {
     width: 100%;
   }
-  .redimensionner_image {
+  /*.redimensionner_image{
     height: 15vmax;
-  }
+  }*/
   .bloc_nouveau {
     width: 33%;
     padding-right: 2%;

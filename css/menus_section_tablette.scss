@@ -1,28 +1,39 @@
-@media all and (max-width: 991px) and (min-width: 767px) {
-  .fa-arrow-left:before {
+@media all and (max-width : 991px) and (min-width : 767px) {
+
+
+
+
+  .fa-arrow-left:before{
     font-size: 200%;
   }
-  .fa-heart {
+  .fa-heart{
     font-size: 150%;
   }
-  h2 {
+
+  h2{
     font-size: 200%;
   }
-  article p {
-    font-size: 150%;
+
+  article{
+    p{
+      font-size: 150%;
+    }
+    h3{
+      font-size: 150%;
+    }
   }
-  article h3 {
-    font-size: 150%;
-  }
-  .bloc_nouveau {
+
+  .bloc_nouveau{
     width: 34%;
   }
   /*.conteneur_ligne:hover .conteneur_prix {
     margin-left: 40%;
   }*/
-  .fa-circle-check:before {
+
+  .fa-circle-check:before{
     font-size: 300%;
   }
+
   @keyframes deplacement_conteneur_prix {
     0% {
       transform: translateX(0);
@@ -34,25 +45,32 @@
       transform: translateX(-150px);
     }
   }
-  .padding_right:hover {
+
+  .padding_right:hover{
     padding-right: 8%;
   }
-  #boutton {
+
+  #boutton{
     font-size: 200%;
   }
-  footer h3 {
-    font-size: 150%;
-    padding-top: 10%;
-  }
-  footer ul li {
-    font-size: 150%;
-  }
-  .fa-utensils:before {
-    font-size: 150%;
-  }
-  .fa-handshake-angle:before {
-    font-size: 150%;
-  }
-}
 
-/*# sourceMappingURL=menus_section_tablette.css.map */
+  footer{
+    h3{
+      font-size: 150%;
+      padding-top: 10%;
+    }
+    ul{
+      li{
+        font-size: 150%;
+      }
+    }
+  }
+  .fa-utensils:before{
+    font-size: 150%;
+  }
+  .fa-handshake-angle:before{
+    font-size: 150%;
+  }
+
+
+}

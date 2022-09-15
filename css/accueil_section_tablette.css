@@ -11,17 +11,20 @@
   i[class="fa-solid fa-1"] {
     margin-left: -2%;
     margin-right: 15%;
-    font-size: 150%;
+    font-size: 180%;
+    width: 2%;
   }
   i[class="fa-solid fa-2"] {
     margin-left: -2%;
     margin-right: 15%;
-    font-size: 150%;
+    font-size: 180%;
+    width: 2%;
   }
   i[class="fa-solid fa-3"] {
     margin-left: -2%;
     margin-right: 15%;
-    font-size: 150%;
+    font-size: 180%;
+    width: 2%;
   }
   .fa-mobile-screen-button:before {
     font-size: 150%;

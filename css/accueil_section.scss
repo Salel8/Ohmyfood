@@ -1,0 +1,359 @@
+hr{
+  background: linear-gradient(180deg, #cecece, #eaeaea);
+  height: 4px;
+  margin: 0px;
+  border: none;
+}
+
+.section1{
+  width: 100%;
+
+  aside{
+    width: 100%;
+    background-color: #eaeaea;
+  }
+
+  article{
+    width: 100%;
+    background-color: #f6f6f6;
+    h3{
+      padding-left : 25%;
+      padding-right : 25%;
+      text-align : center;
+      margin-top : 10%;
+      margin-bottom: 0%;
+    }
+    p{
+      padding-left : 15%;
+      padding-right : 15%;
+      text-align: center;
+    }
+  }
+}
+
+.conteneur_ligne{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.conteneur_colonne{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.centrer_element_axe_principal{
+  justify-content: center;
+}
+.centrer_element_axe_secondaire{
+  align-items: center;
+}
+
+i[class="fa-solid fa-location-dot"]{
+  margin-right : 4%;
+}
+i[class="fa-solid fa-1"]{
+  background-color: #9356dc;
+  color: white;
+  border-radius: 100%;
+  padding-left: 1.2%;
+  padding-right: 1.2%;
+  margin-left: -3%;
+  margin-right: 10%;
+  width: 3%;
+  font-size: 130%;
+}
+i[class="fa-solid fa-2"]{
+  background-color: #9356dc;
+  color: white;
+  border-radius: 100%;
+  padding-left: 1.2%;
+  padding-right: 1.2%;
+  margin-left: -3%;
+  margin-right: 10%;
+  width: 3%;
+  font-size: 130%;
+}
+i[class="fa-solid fa-3"]{
+  background-color: #9356dc;
+  color: white;
+  border-radius: 100%;
+  padding-left: 1.2%;
+  padding-right: 1.2%;
+  margin-left: -3%;
+  margin-right: 10%;
+  width: 3%;
+  font-size: 130%;
+}
+
+.fa-1:before{
+  font-size: 55%;
+  position: relative;
+  bottom: 2px;
+}
+.fa-2:before{
+  font-size: 55%;
+  position: relative;
+  bottom: 2px;
+}
+.fa-3:before{
+  font-size: 55%;
+  position: relative;
+  bottom: 2px;
+}
+
+i[class="fa-solid fa-store"]{
+  color: #9356dc;
+}
+i[class="fa-solid fa-mobile-screen-button"], i[class="fa-solid fa-list"]{
+  color: #7e7e7e;
+}
+
+.conteneur_fonctionnement{
+  width: 90%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  text-align: center;
+  border-radius: 25px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  box-shadow: 3px 5px 10px 5px #e7e7e7;
+  background-color: #f6f6f6;
+
+  &:hover{
+    background-color: #f5edff;
+  }
+}
+
+/*.colour_conteneur_fonctionnement_1_et2{
+  background-color: #f6f6f6;
+}*/
+/*.colour_conteneur_fonctionnement_3{
+  background-color: #f5edff;
+}*/
+
+#boutton{
+  border-radius : 25px;
+  padding : 3%;
+  margin-bottom: 13%;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: white;
+  border: none;
+  box-shadow : 0px 5px 10px 5px rgb(242,242,242);
+  &:hover {
+        background: linear-gradient(170deg, lighten(#FF79DA, 5), lighten(#9356DC, 5));
+        box-shadow : 0px 5px 10px 5px lighten(rgb(242,242,242), 5);
+      }
+}
+
+
+.section2{
+  aside{
+    p{
+      font-weight: bold;
+      margin-left: 10%;
+    }
+  }
+  article{
+    background-color: #f6f6f6;
+    .conteneur_restaurant{
+      width: 90%;
+    }
+    img{
+      object-fit: cover;
+      width : 100%;
+      height : 100%;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+    }
+  }
+
+  h3{
+    margin-left: 5%;
+    padding-top: 10%;
+  }
+}
+
+.conteneur_restaurant{
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  border-radius: 25px;
+}
+
+.fond_blanc{
+  background-color: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 3px 5px 10px 5px #e7e7e7;
+  h4{
+    margin-bottom: 0%;
+    margin-left: 4%;
+    color: black;
+  }
+  p{
+    margin-top:1%;
+    margin-left: 4%;
+    color: black;
+  }
+}
+
+a{
+  text-decoration: none;
+  height: 250px;
+}
+
+.restaurant_ecriture{
+  width: 85%;
+}
+.restaurant_icone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+i[class="fa-regular fa-heart"]{
+  color: black;
+  font-size: 150%;
+}
+
+.coeur-vide{
+  position: relative;
+  /*visibility: visible;*/
+  z-index: 0;
+  /*&:hover{
+    visibility: hidden;
+  }*/
+  &:hover .coeur-rempli{
+      /*visibility: visible;*/
+      z-index: 1;
+      /*opacity: 1;
+      transition: opacity 3s;*/
+      animation: coeur_remplit 2000ms;
+      animation-fill-mode: forwards;
+  }
+}
+
+.coeur-rempli{
+  width: 25px;
+  position: absolute;
+  top:35%;
+  /*right:0;*/
+  /*visibility: visible;*/
+  /*color: red;*/
+  /*font-size: 150%;
+  z-index: -1;*/
+  opacity: 0;
+}
+
+/* coeur qui se remplit*/
+
+@keyframes coeur_remplit{
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+    }
+}
+
+/*               */
+
+/*.redimensionner_image{
+  height: 25vmax;
+}*/
+
+.bloc_nouveau{
+  position: absolute;
+  top: 4%;
+  right: 4%;
+  background-color: #99e2d0;
+  color: #4cb59b;
+  padding: 1%;
+  padding-right: 4%;
+  /*width: 20%;*/
+  border-radius: 3%;
+
+  p{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    color: #139273;
+  }
+}
+
+.position_relative{
+  position: relative;
+}
+
+/*loading spinner*/
+
+.apparition_body{
+  animation: apparition_body 1000ms 3000ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes apparition_body{
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+    /*width: 100%;*/
+  }
+}
+
+
+
+$cd-bars: #15DEA5;
+$size: 3vh;
+$anim-dur: 1000ms;
+$anim-delay: calc($anim-dur / 5);
+
+.load {
+    position: fixed;
+    top: 40%;
+    left: 25%;
+    /*opacity: 1;*/
+    width: $size*10;
+    height: $size*7.5;
+    display: flex;
+    justify-content: space-evenly;
+    &__bar {
+        background-color: $cd-bars;
+        height: 100%;
+        width: $size;
+        animation: bars $anim-dur both 3;
+        animation-direction: alternate;
+        @for $i from 1 through 5 {
+            &--#{$i} {
+                animation-delay: $anim-delay * $i;
+            }
+        }
+    }
+}
+
+.load__bar--1 {
+    animation-delay: 200ms;
+}
+.load__bar--2 {
+    animation-delay: 400ms;
+}
+.load__bar--3 {
+    animation-delay: 600ms;
+}
+.load__bar--4 {
+    animation-delay: 800ms;
+}
+.load__bar--5 {
+    animation-delay: 1000ms;
+}
+
+@keyframes bars {
+    0% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1.0);
+        opacity: 0;
+    }
+}

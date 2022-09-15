@@ -1,0 +1,114 @@
+@media all and (max-width : 991px) and (min-width : 767px) {
+
+p{
+  font-size: 150%;
+}
+.section1{
+  article{
+    h3{
+      font-size: 150%;
+    }
+  }
+}
+#boutton{
+  font-size: 150%;
+}
+
+i[class="fa-solid fa-1"]{
+  margin-left: -2%;
+  margin-right: 15%;
+  font-size: 180%;
+  width: 2%;
+}
+i[class="fa-solid fa-2"]{
+  margin-left: -2%;
+  margin-right: 15%;
+  font-size: 180%;
+  width: 2%;
+}
+i[class="fa-solid fa-3"]{
+  margin-left: -2%;
+  margin-right: 15%;
+  font-size: 180%;
+  width: 2%;
+}
+
+.fa-mobile-screen-button:before{
+  font-size: 150%;
+}
+.fa-list:before{
+  font-size: 150%;
+}
+.fa-store:before{
+  font-size: 150%;
+}
+
+
+
+.conteneur_colonne{
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.section2{
+  article{
+    a{
+      width: 100%;
+    }
+    .conteneur_restaurant{
+      width: 45%;
+    }
+  }
+
+  aside{
+    p{
+      margin-left: 15%;
+      font-size: 150%;
+    }
+  }
+
+  h3{
+    font-size: 150%;
+  }
+}
+
+.fond_blanc{
+  width: 100%;
+  h4{
+    font-size: 150%;
+  }
+}
+
+.bloc_nouveau{
+  width: 33%;
+  padding-right: 2%;
+}
+
+.coeur-rempli{
+  top: 39%;
+}
+
+footer{
+  h3{
+    font-size: 150%;
+  }
+  ul{
+    li{
+      font-size: 150%;
+    }
+  }
+}
+.fa-utensils:before{
+  font-size: 150%;
+}
+.fa-handshake-angle:before{
+  font-size: 150%;
+}
+
+.redimensionner_image{
+  height: 28vmax;
+}
+
+
+}

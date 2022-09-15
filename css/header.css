@@ -2,13 +2,14 @@
   display : flex;
   flex-wrap: nowrap;
   flex-direction: row;
+  justify-content: center;
 }
 
 #logo_Ohmyfood{
   width : 40%;
-  position: relative;
+  /*position: relative;
   left: 27%;
-  top: -30%;
+  top: -30%;*/
 }
 
 i[class="fa-solid fa-arrow-left"]{

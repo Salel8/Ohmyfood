@@ -1,10 +1,13 @@
-@media all and (min-width: 992px) {
-  .fa-arrow-left:before {
+@media all and (min-width : 992px) {
+
+  .fa-arrow-left:before{
     font-size: 200%;
   }
-  .fa-circle-check:before {
+
+  .fa-circle-check:before{
     font-size: 200%;
   }
+
   @keyframes deplacement_conteneur_prix {
     0% {
       transform: translateX(0);
@@ -16,31 +19,44 @@
       transform: translateX(-120px);
     }
   }
-  .padding_right:hover {
+
+  .padding_right:hover{
     padding-right: 8%;
   }
-  #boutton {
+
+  #boutton{
     font-size: 180%;
   }
-  hr {
+
+  hr{
     width: 4%;
   }
-  .bordure_conteneur {
+
+  .bordure_conteneur{
     width: 60%;
   }
-  .bloc_nouveau {
+
+  .bloc_nouveau{
     width: 32%;
   }
-  footer div {
-    padding-top: 5%;
+
+  footer{
+    div{
+      padding-top: 5%;
+    }
+    ul{
+      li{
+        padding-bottom: 0%;
+        padding-top: 1%;
+      }
+    }
   }
-  footer ul li {
-    padding-bottom: 0%;
-    padding-top: 1%;
-  }
-  i[class="fa-solid fa-utensils"] {
+
+  i[class="fa-solid fa-utensils"]{
     margin-right: 2.5%;
   }
-}
 
-/*# sourceMappingURL=menus_section_desktop.css.map */
+
+
+
+}
