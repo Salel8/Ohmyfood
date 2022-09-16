@@ -1,0 +1,61 @@
+@mixin boutton{
+  margin-top: 8%;
+  margin-bottom: 15%;
+  border-radius : 25px;
+  padding : 3%;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: white;
+  border: none;
+  box-shadow : 0px 5px 10px 5px rgb(242,242,242);
+  &:hover {
+        background: linear-gradient(170deg, lighten(#FF79DA, 5), lighten(#9356DC, 5));
+        box-shadow : 0px 5px 10px 5px lighten(rgb(242,242,242), 5);
+      }
+}
+
+@mixin coeur_vide{
+  position: relative;
+  z-index: 0;
+
+  &:hover .coeur-rempli{
+      z-index: 1;
+      animation: coeur_remplit 2000ms;
+      animation-fill-mode: forwards;
+    }
+}
+
+@mixin numero_fonctionnement{
+  background-color: #9356dc;
+  color: white;
+  border-radius: 100%;
+  padding-left: 1.2%;
+  padding-right: 1.2%;
+  margin-left: -3%;
+  margin-right: 10%;
+  width: 3%;
+  font-size: 130%;
+}
+
+@mixin decalage_numero_conteneur{
+  font-size: 55%;
+  position: relative;
+  bottom: 2px;
+}
+
+/* mixin tablette*/
+
+@mixin numero_fonctionnement_tablette{
+  margin-left: -2%;
+  margin-right: 15%;
+  font-size: 180%;
+  width: 2%;
+}
+
+@mixin agrandissement_tablette{
+  font-size: 150%;
+}
+
+
+$couleur_primaire: #9356DC;
+$couleur_secondaire: #FF79DA;
+$couleur_tertiaire: #99e2d0;

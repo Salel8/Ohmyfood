@@ -1,4 +1,5 @@
 @media all and (max-width: 991px) and (min-width: 767px) {
+  /* mixin tablette*/
   p {
     font-size: 150%;
   }
@@ -26,13 +27,7 @@
     font-size: 180%;
     width: 2%;
   }
-  .fa-mobile-screen-button:before {
-    font-size: 150%;
-  }
-  .fa-list:before {
-    font-size: 150%;
-  }
-  .fa-store:before {
+  .fa-mobile-screen-button:before, .fa-list:before, .fa-store:before {
     font-size: 150%;
   }
   .conteneur_colonne {
@@ -72,10 +67,7 @@
   footer ul li {
     font-size: 150%;
   }
-  .fa-utensils:before {
-    font-size: 150%;
-  }
-  .fa-handshake-angle:before {
+  .fa-utensils:before, .fa-handshake-angle:before {
     font-size: 150%;
   }
   .redimensionner_image {

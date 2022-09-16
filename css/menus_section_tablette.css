@@ -1,4 +1,5 @@
 @media all and (max-width: 991px) and (min-width: 767px) {
+  /* mixin tablette*/
   .fa-arrow-left:before {
     font-size: 200%;
   }
@@ -17,9 +18,6 @@
   .bloc_nouveau {
     width: 34%;
   }
-  /*.conteneur_ligne:hover .conteneur_prix {
-    margin-left: 40%;
-  }*/
   .fa-circle-check:before {
     font-size: 300%;
   }
@@ -47,10 +45,7 @@
   footer ul li {
     font-size: 150%;
   }
-  .fa-utensils:before {
-    font-size: 150%;
-  }
-  .fa-handshake-angle:before {
+  .fa-utensils:before, .fa-handshake-angle:before {
     font-size: 150%;
   }
 }

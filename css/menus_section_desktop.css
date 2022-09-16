@@ -1,8 +1,5 @@
 @media all and (min-width: 992px) {
-  .fa-arrow-left:before {
-    font-size: 200%;
-  }
-  .fa-circle-check:before {
+  .fa-arrow-left:before, .fa-circle-check:before {
     font-size: 200%;
   }
   @keyframes deplacement_conteneur_prix {

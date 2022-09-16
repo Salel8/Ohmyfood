@@ -1,13 +1,13 @@
 @media all and (max-width : 991px) and (min-width : 767px) {
 
-
+  @import "mixin.scss";
 
 
   .fa-arrow-left:before{
     font-size: 200%;
   }
   .fa-heart{
-    font-size: 150%;
+    @include agrandissement_tablette;
   }
 
   h2{
@@ -16,19 +16,17 @@
 
   article{
     p{
-      font-size: 150%;
+      @include agrandissement_tablette;
     }
     h3{
-      font-size: 150%;
+      @include agrandissement_tablette;
     }
   }
 
   .bloc_nouveau{
     width: 34%;
   }
-  /*.conteneur_ligne:hover .conteneur_prix {
-    margin-left: 40%;
-  }*/
+  
 
   .fa-circle-check:before{
     font-size: 300%;
@@ -56,20 +54,17 @@
 
   footer{
     h3{
-      font-size: 150%;
+      @include agrandissement_tablette;
       padding-top: 10%;
     }
     ul{
       li{
-        font-size: 150%;
+        @include agrandissement_tablette;
       }
     }
   }
-  .fa-utensils:before{
-    font-size: 150%;
-  }
-  .fa-handshake-angle:before{
-    font-size: 150%;
+  .fa-utensils:before, .fa-handshake-angle:before{
+    @include agrandissement_tablette;
   }
 
 
