@@ -188,7 +188,7 @@ hr {
 
 /*menu qui apparaît un par un*/
 .apparition_entrées {
-  animation: apparition_entrées 1000ms 2000ms;
+  animation: apparition_entrées 1000ms 1000ms;
   animation-fill-mode: backwards;
 }
 
@@ -203,7 +203,7 @@ hr {
   }
 }
 .apparition_plats {
-  animation: apparition_plats 1000ms 4000ms;
+  animation: apparition_plats 1000ms 2000ms;
   animation-fill-mode: backwards;
 }
 
@@ -218,7 +218,7 @@ hr {
   }
 }
 .apparition_desserts {
-  animation: apparition_desserts 1000ms 6000ms;
+  animation: apparition_desserts 1000ms 3000ms;
   animation-fill-mode: backwards;
 }
 
